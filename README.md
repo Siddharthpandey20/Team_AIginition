@@ -1,5 +1,7 @@
 # DocuChat - Multimodal Chatbot for Efficient Retrieval-Augmented Generation (RAG)
 
+#Power Point Presentation: https://www.canva.com/design/DAGicLXgv04/jSM3PSLNDqSBxCEJ9MaPgw/view?utm_content=DAGicLXgv04&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h73c9938180
+
 ## Table of Contents
 
 - [Overview](#overview)
