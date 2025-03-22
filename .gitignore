@@ -1,0 +1,21 @@
+# Ignore .env file
+.env
+
+# Ignore the upload and data folders
+upload/
+data/
+
+# Ignore all __pycache__ folders
+__pycache__/
+
+# Optionally ignore compiled files (like .pyc files)
+*.pyc
+
+# Optionally ignore logs or temporary files
+*.log
+*.tmp
+
+# Ignore all PDF files (optional, if PDFs are not to be tracked)
+*.pdf
+function.py
+hackathon.py

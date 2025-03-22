@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocuChat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">DocuChat</div>
+        <div class="upload-section">
+            <div class="upload-title">Upload Document</div>
+            <div class="upload-form">
+                <div class="file-input-wrapper">
+                    <label for="file-input" class="file-input-button">
+                        <span>Select File</span>
+                    </label>
+                    <input type="file" 
+                           id="file-input" 
+                           accept=".pdf,.csv,.txt,.jpg,.jpeg,.png,.mp3,.wav"
+                           aria-label="Choose file">
+                    <div id="selected-file-name" class="selected-file-name"></div>
+                </div>
+                <div class="url-input-container">
+                    <input type="text" 
+                           id="url-input" 
+                           class="url-input" 
+                           placeholder="Or enter URL"
+                           aria-label="Enter URL">
+                </div>
+                <button id="upload-button" class="upload-button">Upload</button>
+                <div id="upload-status" class="upload-status"></div>
+            </div>
+        </div>
+        <div class="document-list">
+            <div class="document-list-title">Uploaded Documents</div>
+            <div id="document-items-container"></div>
+        </div>
+        <div class="footer">
+            Made By: <span>Team AIgnition</span> 🚀
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="chat-container">
+            <button id="clear-chat" class="clear-chat">Clear Chat</button>
+            <div id="chat-messages"></div>
+            <div class="chat-input-container">
+                <textarea id="chat-input" 
+                         class="chat-input" 
+                         placeholder="Type your message..."
+                         title="Chat input"
+                         rows="1"></textarea>
+                <button id="send-button" 
+                        class="send-button" 
+                        title="Send message" 
+                        aria-label="Send message"
+                        disabled>
+                    <svg class="send-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
