@@ -24,8 +24,8 @@ def main():
     # Configure and run server
     config = uvicorn.Config(
         "main:app",
-        host="127.0.0.1",  # Change to localhost only
-        port=8000,
+        host="0.0.0.0",  # Change to localhost only
+        port=10000,
         reload=True,
         access_log=True,
         log_level="info"
